@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multimedia</title>
+  </head>
+  <body>
+    <div>
+      <h1>I frame</h1>
+      <iframe src="entity.html" width="300px" height="300px"></iframe>
+    </div>
+
+    <hr />
+    <br />
+
+    <h2>Youtube video using iFrame</h2>
+
+    <iframe
+      width="500"
+      height="300"
+      src="https://www.youtube.com/embed/QzntvHz23tw?si=wWUKvMigJ1lLc28S"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <hr />
+    <br />
+    <br /><br /><br />
+    <h2>Video</h2>
+    <video width="300px" height="200px" controls muted poster="img.jpg">
+      <source src="video1.mp4" type="video/mp4" />
+      <source src="video2.mp4" type="video/mp4" />
+      <source src="video.mp4" type="video/mp4" />
+      This video can not play
+    </video>
+
+    <hr />
+    <h2>Audio</h2>
+    <audio controls muted loop>
+      <source src="despacito.mp3" />
+    </audio>
+  </body>
+</html>

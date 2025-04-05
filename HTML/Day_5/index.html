@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Tags</title>
+  </head>
+  <body>
+    <h2>Audio Tag</h2>
+
+    <audio src="despacito.mp3" muted controls></audio>
+    <!-- <audio src="despacito.mp3" muted controls></audio> -->
+
+    <hr />
+
+    <!--  Shows blank -->
+    <audio controls muted>
+      <source src="despacito2.mp3" type="audio/mp3" />
+      <source src="despacito2.mp3" />
+      Your browser doesn't support video tag
+    </audio>
+    <!-- Inline level -->
+    <!--   <audio controls muted>
+      <source src="despacito2.mp3" />
+      <source src="despacito.mp3" />
+      Your browser doesn't support video tag
+    </audio> -->
+    <hr />
+
+    <h2>Video Tag</h2>
+
+    <video muted controls height="300px" poster="img.jpg">
+      <source src="video.mp4" />
+      Your browser doesn't support video tag
+    </video>
+
+    <video
+      src="video.mp4"
+      muted
+      height="200px"
+      poster="img.jpg"
+      type="video/mp4"
+    >
+      No video
+    </video>
+    <video src="video.mp4" muted height="200px" poster="img.jpg">
+      No video
+    </video>
+
+    <hr />
+    <!--   <video controls>
+      <source src="https://www.youtube.com/watch?v=xAvTgCsCHLs" />
+    </video> -->
+
+    <hr />
+    <br />
+    <!-- inline level -->
+
+    <h2>iframe Tag</h2>
+
+    <iframe src="about.html" height="200px"></iframe>
+    <iframe src="about.html" height="200px"></iframe>
+
+    <hr />
+
+    <iframe src="https://www.apnacollege.in/" height="200px"></iframe>
+
+    <!--  i frame from youtube -->
+
+    <iframe
+      width="500"
+      height="300"
+      src="https://www.youtube.com/embed/QzntvHz23tw?si=wWUKvMigJ1lLc28S"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

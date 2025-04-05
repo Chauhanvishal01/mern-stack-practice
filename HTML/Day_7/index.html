@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Tags</title>
+    <style>
+      div {
+        margin-block: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Heading tags :-> Block level -->
+    <h1>Vishal Chauhan One</h1>
+    <h2>Vishal Chauhan Two</h2>
+    <h3>Vishal Chauhan Three</h3>
+    <h4>Vishal Chauhan Four</h4>
+    <h5>Vishal Chauhan Five</h5>
+    <h6>Vishal Chauhan Six</h6>
+
+    <!-- Paragraph Tag :-> Block Level -->
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum enim
+      architecto nam magnam, ratione eveniet aperiam odio, similique voluptatem
+      quasi libero ea temporibus deserunt numquam vero beatae molestias
+      voluptatum qui!
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum enim
+      architecto nam magnam, ratione eveniet aperiam odio, similique voluptatem
+      quasi libero ea temporibus deserunt numquam vero beatae molestias
+      voluptatum qui!
+    </p>
+
+    <!-- Break tag :> Self closing/unpaired and Inline -->
+    <span>Vishal</span> <br />
+    <span>Chauhan</span>
+
+    <!-- PreFormatted Tag :->Block Level -->
+    <pre>
+    hello,
+    My name is Vishal Chauhan.
+    I am a Software Enginner.
+ </pre
+    >
+    <!-- Horizontal Rule :>Inline/self closing/unpaired  -->
+    <hr / >
+
+    <!-- Ordered List :-> Block level -->
+    <ol type="I">
+      <h2>Languages:</h2>
+      <li>CPP</li>
+      <li>JAVA</li>
+      <li>JAVASCRIPT</li>
+      <li>Python</li>
+      <li>PHP</li>
+    </ol>
+    <!-- UnOrdered List :-> Block level -->
+    <ul>
+      <h2>Frameworks/Library:</h2>
+      <li>Javascript</li>
+      <ul>
+        <li>React JS</li>
+        <li>Express JS</li>
+        <li>Angular</li>
+      </ul>
+      <li>Tailwind CSS</li>
+    </ul>
+
+    <!-- Description List :> Block level -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>HTML is a markup Language.</dd>
+      <dt>Javascript</dt>
+      <dd>Javascript is a programming language.</dd>
+    </dl>
+    <hr />
+    <!-- Table in HTML :>Block Level -->
+
+    <table border="2" style="font-size: 20px; text-align: center">
+      <caption>
+        Table in HTML
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Gender</th>
+          <th colspan="2">Average</th>
+          <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Males</th>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>0.002</td>
+        </tr>
+        <tr>
+          <th>Females</th>
+          <td>1.7</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">&copy; Vishal Chauhan</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+
+    <!-- Image tag :> Inline -->
+
+    <img
+      src="this.png"
+      alt="Logo"
+      height="200px"
+      style="border-radius: 50%; border: 6px solid #adff2f"
+    />
+
+    <img
+      src="https://images.pexels.com/photos/1368382/pexels-photo-1368382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="nature"
+      height="400px"
+      width="400px"
+    />
+    <hr />
+    <!-- A tag :> Inline -->
+
+    <!-- Relative path -->
+    <h1>Relative path</h1>
+    <a href="product.html" target="_blank">Go to Product Page</a>
+    <br />
+    <!-- Absolute Path -->
+    <h1>Absolute path</h1>
+
+    <a href="https://www.google.com/" target="_blank">Go to Google</a>
+
+    <hr />
+
+    <!--  Input :> inline-block -->
+    <h1>Input tag and Types</h1>
+    <form>
+      <div>
+        <!-- Type Text -->
+        <h2>Type Text</h2>
+        <label for="name">Enter your name:</label>
+        <input type="text" placeholder="e.g. vishal " id="name" />
+      </div>
+      <div>
+        <!-- Type Email -->
+        <h2>Type Email</h2>
+        <label for="email">Enter your Email:</label>
+        <input type="email" placeholder="e.g. vishal@gmail.com" id="email" />
+      </div>
+      <div>
+        <!-- Type password -->
+        <h2>Type Password</h2>
+        <label for="password">Enter your Password:</label>
+        <input
+          type="password"
+          placeholder="e.g. your Password "
+          id="password"
+        />
+      </div>
+      <div>
+        <!-- Type Number -->
+        <h2>Type Number</h2>
+
+        <label for="number">Enter your Number:</label>
+        <input type="number" placeholder="e.g. 9877654321 " id="number" />
+      </div>
+      <div>
+        <h2>Type Search</h2>
+        <label for="search">Search Here:</label>
+        <input type="search" id="search" placeholder="Search..." />
+      </div>
+      <div>
+        <h2>Type Date/time/datetime-local</h2>
+
+        <label for="dob">Enter your DOB:</label><br />
+        <input type="date" id="dob" /> Date <br />
+        <input type="time" id="dob" /> Time<br />
+        <br />
+        <input type="datetime-local" id="dob" /> Date Time local
+      </div>
+
+      <div>
+        <h2>Select options</h2>
+
+        <select name="">
+          <option value="">Select Your City</option>
+          <option value="mohali">Mohali</option>
+          <option value="mandi">Mandi</option>
+          <option value="chamba">Chamba</option>
+          <option value="shimla">Shimla</option>
+        </select>
+      </div>
+
+      <div>
+        <h2>Type Range / Color and FIle</h2>
+
+        Select Range: <input type="range" /> <br />
+        Select Color: <input type="color" /><br />
+        <br />
+        <input type="file" />
+      </div>
+      <div>
+        <h2>Type radio and also use fieldset and legend</h2>
+
+        <fieldset>
+          <legend>Select Your gender</legend>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </fieldset>
+      </div>
+
+      <div>
+        <h2>Type checkbox</h2>
+
+        <fieldset>
+          <legend>Select Your skills</legend>
+          <input type="checkbox" id="java" /> <label for="java">JAVA</label>
+          <br /><br />
+          <input type="checkbox" id="javascript" />
+          <label for="javascript">JAVASCRIPT</label> <br /><br />
+          <input type="checkbox" id="cpp" /> <label for="cpp">CPP</label>
+          <br /><br />
+          <input type="checkbox" id="react" />
+          <label for="react">REACT JS</label> <br /><br />
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Comment</legend>
+          <h2>TextArea</h2>
+          <textarea
+            rows="5"
+            cols="50"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </fieldset>
+      </div>
+
+      <div>
+        <h2>Type URL</h2>
+        <input type="url" placeholder="e.g. https://www.google.com" />
+      </div>
+
+      <div>
+        <h2>Type image</h2>
+
+        <input
+          type="image"
+          src="https://imgs.search.brave.com/vM1b_X3pQOsdm2Rd9i4VaKLZ8GP8ET_dYnsJnT2W4Ms/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE2LzY5LzA0/LzM2MF9GXzIxNjY5/MDQ1M19HcjJ0cnJX/bnZzVjFnbndWWEl5/dHV1N1hkNEVOMVlQ/Ny5qcGc"
+          alt="image"
+          width="400px"
+        />
+      </div>
+      <div>
+        <h2>Type button / submit / reset</h2>
+
+        <input type="button" value="Submit" />
+        <input type="submit" value="Login" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+
+    <!-- Audio Tag -->
+    <div>
+      <h1>Audio tag</h1>
+      <audio controls muted>
+        <source src="despacito.mp3" />
+      </audio>
+    </div>
+    <!-- Video Tag -->
+    <div>
+      <h1>Audio tag</h1>
+      <video controls muted height="300px" poster="this.png">
+        <source src="video.mp4" />
+      </video>
+    </div>
+
+    <!-- iFrame Tag -->
+    <h2>I Frame</h2>
+    <iframe src="product.html" height="200px"> ></iframe>
+<br>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/zgt5oTD3rRc?si=ACYWGe7GS54pYBZL"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <br /><br /><br /><br />
+  </body>
+</html>

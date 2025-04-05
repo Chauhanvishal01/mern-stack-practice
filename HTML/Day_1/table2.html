@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      tr,
+      td {
+        padding: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2px">
+      <!-- <caption>Data about company</caption> -->
+      <thead>
+        <tr>
+          <th colspan="5">Data About Company</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">ID</th>
+          <th colspan="2">MemberShip Dates</th>
+          <th rowspan="2">Balance</th>
+        </tr>
+        <tr>
+          <th>Joined</th>
+          <th>Canceled</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Vishal</th>
+          <td>4323</td>
+          <td>June 3,2025</td>
+          <td>N/A</td>
+          <td>0.00</td>
+        </tr>
+        <tr>
+          <th>Chauhan</th>
+          <td>7863</td>
+          <td>January 3,2025</td>
+          <td>April 8, 2027</td>
+          <td>38.00</td>
+        </tr>
+        <tr>
+          <th>Ram</th>
+          <td>8866</td>
+          <td>August 3,2025</td>
+          <td>N/A</td>
+          <td>50.00</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th colspan="5">&copy; Vishal Chauhan</th>
+        </tr>
+      </tfoot>
+    </table>
+    <br /><br /><br />
+
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: lightgray" />
+        <!-- Applies to 2 columns -->
+        <col style="background-color: lightyellow" />
+      </colgroup>
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+        <td>Row 1, Column 3</td>
+      </tr>
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+        <td>Row 2, Column 3</td>
+      </tr>
+    </table>
+    <br /><br /><br />
+    <table border="2px">
+      <colgroup>
+        <col style="background-color: lightblue; width: 100px" />
+        <col style="background-color: lightgreen" />
+      </colgroup>
+      <tr>
+        <td>Row 1, Column 1</td>
+        <td>Row 1, Column 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Column 1</td>
+        <td>Row 2, Column 2</td>
+      </tr>
+    </table>
+  </body>
+</html>

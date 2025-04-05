@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 10px;
+      }
+      body {
+        background-color: #333;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+      .container {
+        border-radius: 20px;
+        text-align: center;
+        background-color: lightsalmon;
+      }
+      header {
+        background-color: pink;
+      }
+      nav {
+        background-color: lightgreen;
+      }
+      .main-section {
+        display: flex;
+        padding: 0;
+      }
+      aside {
+        background-color: lightcoral;
+        width: 50%;
+      }
+      .main-section main {
+        width: 50%;
+        background-color: lightblue;
+      }
+      .main-section div {
+        background-color: yellow;
+      }
+      .main-section p {
+        background-color: lightgrey;
+      }
+      .main-section section {
+        background-color: blue;
+      }
+      footer {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Semantic HTML</h1>
+      <section class="semantic">
+        <header>Header</header>
+        <nav>nav</nav>
+        <section class="main-section">
+          <aside>aside</aside>
+          <main>
+            <article>
+              article
+              <div>figure</div>
+              <p>p</p>
+            </article>
+            <section>section</section>
+          </main>
+        </section>
+      </section>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

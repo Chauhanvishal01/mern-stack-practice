@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      div {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1 style="text-align: center">Form in HTML</h1>
+      <div>
+        <label for="name">Enter your name:</label>
+        <input type="text" placeholder="e.g. vishal " id="name" />
+      </div>
+      <div>
+        <label for="email">Enter your Email:</label>
+        <input type="email" placeholder="e.g. vishal@gmail.com" id="email" />
+      </div>
+      <div>
+        <label for="password">Enter your Password:</label>
+        <input
+          type="password"
+          placeholder="e.g. your Password "
+          id="password"
+        />
+      </div>
+      <div>
+        <label for="number">Enter your Number:</label>
+        <input type="number" placeholder="e.g. 9877654321 " id="number" />
+      </div>
+      <div>
+        <label for="search">Search Here:</label>
+        <input type="search" id="search" placeholder="Search..." />
+      </div>
+      <div>
+        <label for="dob">Enter your DOB:</label>
+        <input type="date" id="dob" /> Date <br />
+        <input type="time" id="dob" /> Time<br />
+        <br />
+        <input type="datetime-local" id="dob" /> Date Time local
+      </div>
+
+      <div>
+        <select name="">
+          <option value="">Select Your City</option>
+          <option value="mohali">Mohali</option>
+          <option value="mandi">Mandi</option>
+          <option value="chamba">Chamba</option>
+          <option value="shimla">Shimla</option>
+        </select>
+      </div>
+
+      <div>
+        Select Range: <input type="range" /> <br />
+        Select Color: <input type="color" /><br />
+        <br />
+        <input type="file" />
+      </div>
+      <div>
+        <fieldset>
+          <legend>Select Your gender</legend>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Select Your skills</legend>
+          <input type="checkbox" id="java" /> <label for="java">JAVA</label>
+          <br /><br />
+          <input type="checkbox" id="javascript" />
+          <label for="javascript">JAVASCRIPT</label> <br /><br />
+          <input type="checkbox" id="cpp" /> <label for="cpp">CPP</label>
+          <br /><br />
+          <input type="checkbox" id="react" />
+          <label for="react">REACT JS</label> <br /><br />
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Comment</legend>
+          <textarea
+            rows="5"
+            cols="50"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </fieldset>
+      </div>
+      <div>
+        <input
+          type="image"
+          src="https://imgs.search.brave.com/vM1b_X3pQOsdm2Rd9i4VaKLZ8GP8ET_dYnsJnT2W4Ms/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE2LzY5LzA0/LzM2MF9GXzIxNjY5/MDQ1M19HcjJ0cnJX/bnZzVjFnbndWWEl5/dHV1N1hkNEVOMVlQ/Ny5qcGc"
+          alt="image"
+          width="400px"
+        />
+      </div>
+      <div>
+        <input type="button" value="Submit" />
+        <input type="submit" value="Login" />
+      </div>
+    </form>
+  </body>
+</html>

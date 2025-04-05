@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final</title>
+    <style>
+      * {
+        font-size: 20px;
+      }
+      table {
+        padding: 10px;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      input {
+        padding: 10px;
+        margin-block: 10px;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      a:hover {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#table">Table</a> <br />
+            <a href="#form">Registration Form</a> <br />
+            <a href="#img">Img And iFrame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="width: 100%; display: flex; justify-content: space-evenly">
+      <section id="table">
+        <table border="" style="border: 10px solid">
+          <caption>
+            Order Details
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2">Purchase order: 7635213</th>
+              <th colspan="2">Date : 29th Jan 2025</th>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h4>Vendor:</h4>
+                <pre>
+ABC XYZ ltd.
+DUMMY STREET
+BUILDING 123
+HP 123456
+                    </pre
+                >
+              </td>
+              <td colspan="2">
+                <h4>Ship TO:</h4>
+                <pre>
+ABC
+DUMMY STREET
+BUILDING 123
+HP 8765432
+                    </pre
+                >
+              </td>
+            </tr>
+            <tr>
+              <th>Qty.</th>
+              <th>Item Code</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100</td>
+              <td>ABCDE</td>
+              <td>Pencils</td>
+              <td>20.00</td>
+            </tr>
+            <tr>
+              <td>1000</td>
+              <td>IN877</td>
+              <td>Notebooks</td>
+              <td>100.00</td>
+            </tr>
+            <tr>
+              <td>500</td>
+              <td>IP8672</td>
+              <td>Pen</td>
+              <td>70.00</td>
+            </tr>
+            <tr>
+              <th colspan="3">Subtotal</th>
+              <td>190.00</td>
+            </tr>
+            <tr>
+              <th colspan="2">GST</th>
+              <td>5%</td>
+              <td>9.50</td>
+            </tr>
+            <tr>
+              <th colspan="3">Grand Total</th>
+              <td>$ 199.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td
+                colspan="4"
+                style="text-align: center; font-weight: bold; font-size: 20px"
+              >
+                &copy; Vishal Chauhan
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <br />
+      <br /><br />
+      <!-- <hr /> -->
+      <section id="form">
+        <fieldset>
+          <legend>Form In HTML</legend>
+          <form style="display: flex; flex-direction: column">
+            <label for="name">Name</label>
+            <input type="text" placeholder="e.g. Vishal Chauhan" id="name" />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="e.g. vishal@gmail.com"
+              id="email"
+            />
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="e.g. 1235ABC" />
+            <label for="age">Age</label>
+            <input type="number" placeholder="e.g. 22" id="age" />
+            <label for="number">Phone:</label>
+
+            <input type="tel" id="number" placeholder="+91 987654321" />
+            <!-- pattern="[0-9]{10}" -->
+
+            <label for="search">Search</label>
+            <input type="search" id="search" placeholder="Search here..." />
+
+            <label for="url">Enter your website URL</label>
+            <input
+              type="url"
+              id="url"
+              placeholder="e.g. https://www.google.com"
+            />
+
+            <label for="dob">Date of Birth with Time</label>
+            <input type="datetime-local" name="" id="" />
+
+            <fieldset>
+              <legend>Gender</legend>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Skills:</legend>
+              <input type="checkbox" id="skill" />JavaScript
+              <input type="checkbox" id="skill" />React Js
+              <input type="checkbox" id="skill" />Node Js
+              <input type="checkbox" id="skill" />Express Js
+            </fieldset>
+            <br />
+
+            <fieldset>
+              <legend>Course</legend>
+              <select>
+                <option value="">-select your course-</option>
+                <option value="mern">MERN Stack</option>
+                <option value="mean">MEAN Stack</option>
+                <option value="js">JAVASCRIPT</option>
+                <option value="java">JAVA</option>
+                <option value="uiux">UI/UX</option>
+              </select>
+            </fieldset>
+
+            <br />
+
+            <label for="range">Range</label>
+            <input type="range" id="range" />
+
+            <div>
+              <label for="color">Select Color :</label>
+              <input type="color" id="color" />
+            </div>
+            <label for="file">Choose File:</label>
+            <input type="file" id="file" />
+
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </form>
+        </fieldset>
+      </section>
+    </main>
+    <section id="img">
+      <img
+        src="https://images.pexels.com/photos/2033933/pexels-photo-2033933.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="fire"
+        width="800"
+        height="500"
+        style="border-radius: 10px"
+      />
+      <iframe
+        width="560"
+        height="450"
+        src="https://www.youtube.com/embed/pDPAcYdSse8?si=21sKJZnSoaIO1Ten"
+        title="YouTube video player"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="semantic">
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Semantic Tags</th>
+            <th>Inline</th>
+            <th>Block</th>
+            <th>HTML Entities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td>&amp;lt;(&lt;) and &amp;gt;(&gt;)</td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td>&amp; = amp; and Equals &equals;</td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td>Plus: &plus; Minus : &minus;</td>
+          </tr>
+          <tr>
+            <td>&lt;article&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td>Multiply: &times; Div: &divide;</td>
+          </tr>
+          <tr>
+            <td>&lt;aside&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td>&alpha; &beta; &gamma; &theta;</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td>&#8377; &dollar; &euro; &pound; &yen;</td>
+          </tr>
+          <tr>
+            <td>&lt;span&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td>&larr; &rarr; &uarr; &uparrow; &darr; &downarrow;</td>
+          </tr>
+          <tr>
+            <td>&lt;strong&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;em&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;div&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;small&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt; - &lt;h6&gt;</td>
+            <td></td>
+            <td>✅</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;code&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;sup&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;sub&gt;</td>
+            <td>✅</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tf">
+      <h1>Text Formatting</h1>
+
+      <pre>
+        <b>BOLD,
+             ipsum dolor sit amet consectetur adipisicing elit.</b>
+        <strong
+          >STRONG,
+           corporis rem dolor sed, quas laborum neque doloremque
+          fugit,</strong
+        >
+        <i>
+          I TAG
+           consequatur delectus officiis esse? Hic enim eius possimus
+          quibusdam
+        </i>
+        <em>
+          EM TAG
+           cumque dolorum perferendis, aut saepe? Perspiciatis inventore
+          dignissimos repellendus labore non doloremque dolor,
+        </em>
+        <mark>
+            MARK TAG
+          aliquam cum quas a rerum, voluptatibus at sint maxime excepturi
+          porro</mark
+        >
+        <small
+          >
+          SMALL TAG
+          asperiores molestias nostrum. Sit laudantium nisi mollitia
+          veritatis</small
+        >
+        <big>
+            BIG TAG
+          corporis voluptate laboriosam iure quod, unde earum numquam suscipit
+          at.
+        </big>
+        <u>
+            U TAG
+          Obcaecati incidunt magni voluptatem adipisci esse, molestiae nisi
+          labore, magnam debitis voluptates alias saepe consectetur modi,
+          aliquid
+        </u>
+        <ins>
+            INS TAG
+          reprehenderit doloribus minus ad atque animi. Dignissimos quos dolor
+          deserunt?
+        </ins>
+<br>
+<br>
+            <abbr title="This is abbr tag.used to create tooltip">Hover me</abbr>
+            DEL TAG
+            <del>500&#8377;</del> 499&#8377; /-
+
+            sup TAG
+           Grade: A<sup>++</sup> 
+           (a+b)<sup>2</sup> = ?
+
+           sub TAG
+           O<sub>2</sub>
+           C<sub>6</sub>H<sub>12</sub>
+      </pre>
+    </section>
+    <footer style="background-color: lightblue; padding: 20px;">
+      <marquee behavior="alternate" scrollAmount="20" direction=""> Visit Again 🙂</marquee>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        margin-block: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Form</h1>
+      <input type="email" placeholder="Enter your email.." id="email" />
+      <input type="password" name="" id="password" placeholder="enter password" />
+      <button id="btn">Submit</button>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        alert(`Email is ${email} and password is ${password}`);
+      });
+    </script>
+  </body>
+</html>
