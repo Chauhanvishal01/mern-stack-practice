@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbars</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      .sixth-nav {
+        background-color: #ff0000d2;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+      .sixth-nav .logo h1 {
+        font-size: 4rem;
+        color: #fff;
+      }
+      .sixth-nav .nav-items {
+        font-family: sans-serif;
+      }
+      .sixth-nav .nav-items a {
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 800;
+        text-decoration: none;
+        margin-right: 1.5rem;
+        letter-spacing: 1.5px;
+      }
+      .sixth-nav .nav-items a:first-child {
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #fff;
+      }
+      .sixth-nav .nav-items a:hover {
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #fff;
+      }
+      .sixth-nav input,
+      .seventh-nav input {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        outline: none;
+        font-size: 1.8rem;
+      }
+      /* Second Navabar */
+      .seventh-nav {
+        height: 80px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        letter-spacing: 1px;
+      }
+      .seventh-nav .nav-items {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+      }
+      .seventh-nav .nav-items h1 {
+        color: #fff;
+        margin-inline: 2rem;
+      }
+      .seventh-nav .nav-items a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+      .seventh-nav .nav-items .special {
+        background-color: blue;
+        padding: 2.5rem 1rem;
+      }
+      select {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        font-size: 2.1rem;
+        font-weight: 800;
+        cursor: pointer;
+      }
+      .seventh-nav .search {
+        margin-right: 4rem;
+      }
+      .seventh-nav input {
+        margin-right: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sixth-nav">
+      <div class="logo">
+        <h1>Fastest</h1>
+      </div>
+      <div class="nav-items">
+        <a href="#">Products</a>
+        <a href="#">Maintenance</a>
+        <a href="#">Support</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <input type="search" placeholder="Search..." />
+      </div>
+    </div>
+    <br />
+    <div class="seventh-nav">
+      <div class="nav-items">
+        <h1>Navbar</h1>
+        <a href="#" class="special">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <select>
+          <option value="">DropDown</option>
+          <option value="#">Services</option>
+          <option value="#">Products</option>
+          <option value="#">Menu</option>
+        </select>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Search..." />
+        <select>
+          <option value="#">Select Country</option>
+          <option value="#">India</option>
+          <option value="#">USA</option>
+          <option value="#">Japan</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 2px solid red;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(500px,1fr));                           
+        grid-template-rows: repeat(6, 100px);
+        /* gap: 10px; */
+        justify-content: center;
+        align-content: center;
+      }
+      .child {
+        background-color: lightblue;
+        border: 10px solid black;
+        font-size: 2rem;
+        text-align: center;
+      }
+      #child-2,
+      #child-4,
+      #child-6,
+      #child-8 {
+        grid-column: 2/4;
+      }
+      #child-4,
+      #child-3 {
+        grid-row: 2/4;
+      }
+      #child-5,
+      #child-6 {
+        grid-row: 4/6;
+      }
+      #child-1 {
+        background-color: aqua;
+      }
+      #child-2 {
+        background-color: skyblue;
+      }
+      #child-3 {
+        background-color: blue;
+      }
+      #child-4 {
+        background-color: blueviolet;
+      }
+      #child-5 {
+        background-color: skyblue;
+      }
+      #child-6 {
+        background-color: greenyellow;
+      }
+      #child-7,
+      #child-8 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" id="child-1">Header</div>
+      <div class="child" id="child-2">Header</div>
+      <div class="child" id="child-3">Nav</div>
+      <div class="child" id="child-4">main</div>
+      <div class="child" id="child-5">nav</div>
+      <div class="child" id="child-6">suvcontent</div>
+      <div class="child" id="child-7">footer</div>
+      <div class="child" id="child-8">footer</div>
+    </div>
+  </body>
+</html>

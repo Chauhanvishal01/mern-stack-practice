@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        width: 100px;
+        height: 100px;
+        border: 10px solid;
+        border-top: 10px solid red;
+        border-radius: 50%;
+        animation: spin 1s ease-in-out 0s infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .main {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+      .box-1 {
+        background-color: skyblue;
+        animation: move 3s ease-in-out 1s infinite;
+      }
+      .box-2 {
+        background-color: crimson;
+        animation: move2 3s ease-in-out 1s infinite;
+      }
+      @keyframes move {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(-100px);
+        }
+        50% {
+          transform: translateY(-100px) translateX(100px);
+        }
+        75% {
+          transform: translateY(0px) translateX(100px);
+        }
+        100% {
+          transform: translateY(0px) translateX(0px);
+        }
+      }
+      @keyframes move2 {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-100px);
+        }
+        50% {
+          transform: translateY(-100px) translateX(-100px);
+        }
+        75% {
+          transform: translateY(-100px) translateX(0px);
+        }
+        100% {
+          transform: translateY(0px) translateX(0px);
+        }
+      }
+      .game {
+        height: 500px;
+        width: 500px;
+        border: 1px solid red;
+        position: relative;
+        overflow: hidden;
+      }
+      .line {
+        width: 80px;
+        position: absolute;
+        bottom: 0;
+        border: 10px solid green;
+        animation: linemove 1s ease-in-out 1s alternate infinite;
+      }
+      .ball {
+        height: 40px;
+        width: 40px;
+        background: yellow;
+        border-radius: 50%;
+        animation:ballmove 2s ease-in-out infinite 1s alternate;
+      }
+      @keyframes linemove {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(400px);
+        }
+      }
+      @keyframes ballmove {
+        from{
+            transform: translate(0)
+
+        }
+        to{
+            transform: translateY(400px);
+
+        }
+        
+      }
+    /*   @keyframes ballmove {
+      from{
+        transform: translate(0);
+
+      }
+      to{
+        transform: translateY(450px) translateX(50px);
+
+      }
+        
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+
+    <br />
+    <div class="main">
+      <div class="box-1 box"></div>
+      <div class="box-2 box"></div>
+    </div>
+
+    <div class="game">
+      <div class="line"></div>
+      <div class="ball"></div>
+    </div>
+    <br /><br /><br />
+  </body>
+</html>

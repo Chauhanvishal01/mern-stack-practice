@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    height: 60px;
+}
+
+.nav-items a {
+    margin-right: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-in;
+}
+
+.nav-items a:hover {
+    color: coral;
+}
+
+.nav-items .logo {
+    font-size: 2.5rem;
+    color: coral;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right img {
+    border-radius: 10px;
+}
+
+.left p {
+    font-size: 2rem;
+    color: #979393;
+    line-height: 1.4;
+}
+
+.left .heading {
+    font-size: 6rem;
+    font-weight: 800;
+    color: coral;
+    margin: 0;
+    padding: 0;
+}
+
+.left button {
+    margin-top: 1rem;
+    padding: 0.8rem 4rem;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    background-color: coral;
+    color: #fff;
+    border: 2px solid coral;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.left button:hover {
+    background: transparent;
+}
+
+/*  About Me Section */
+
+.about-me {
+    height: 90vh;
+    text-align: center;
+    background-color: #ddd;
+    color: #000;
+}
+
+.about-me .content {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+
+.about-me h1 {
+
+    margin-block: 10rem;
+    font-size: 5rem;
+    padding: 2px;
+    border-bottom: 4px solid coral;
+    display: inline-block;
+   
+}
+
+
+.about-me .aboutme-image {
+    width: 50%;
+}
+
+.about-me .aboutme-image img {
+    height: 300px;
+    width: 300px;
+    border-bottom: 10px solid coral;
+    border-left: 10px solid coral;
+
+}
+
+.aboutme-content {
+    width: 50%;
+    max-width: 500px;
+    text-align: start;
+    line-height: 1.5;
+}
+
+.aboutme-content p {
+    font-size: 2rem;
+}
+
+.aboutme-content p:nth-child(2) {
+    color: #333;
+}
+
+.aboutme-content .details {
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.details ul {
+    list-style: none;
+    font-size: 2rem;
+    margin-block: 2rem;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btns button {
+    padding: 0.7rem 2rem;
+    margin-right: 2rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+}
+
+.btns .hireme-btn {
+    background-color: coral;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.btns .hireme-btn:hover {
+    background-color: transparent;
+    border-color: coral;
+    color: #000;
+}
+
+.btns .downloadcv-btn {
+    border: 2px solid coral;
+}
+
+.btns .downloadcv-btn:hover {
+    background-color: coral;
+    color: #fff;
+}

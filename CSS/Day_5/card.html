@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+      }
+      .main {
+        padding: 50px;
+        width: 450px;
+        height: 450px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 3px 40px gray;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 10px solid #0099ff;
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 24px;
+        color: #333;
+      }
+      .btn {
+        width: 200px;
+        padding: 14px 40px;
+        font-size: 20px;
+        border: none;
+        background-color: #0099ff;
+        color: #fff;
+        letter-spacing: 3px;
+        cursor: pointer;
+        border-radius: 10px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img src="this.png" alt="img" id="img" />
+      <h1>Vishal Chauhan</h1>
+      <p>Web Developer | Desginer</p>
+      <button class="btn">Follow</button>
+    </div>
+  </body>
+  <script>
+    const img = document.getElementById("img");
+    const btn = document.querySelector(".btn");
+    btn.addEventListener("click", () => {
+      if (btn.innerHTML === "Follow") {
+        btn.innerHTML = "Unfollow";
+        btn.style.backgroundColor = "green";
+        img.style.borderColor = "green";
+      } else {
+        btn.innerHTML = "Follow";
+        btn.style.backgroundColor = "#0099ff";
+        img.style.borderColor = "#0099ff";
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent {
+        height: 700px;
+        width: 700px;
+        background-color: #fff;
+        animation: lightDown 4s ease-in-out forwards;
+      }
+      @keyframes lightDown {
+        from {
+          background-color: #fff;
+        }
+        to {
+          background-color: #000;
+        }
+      }
+      .sun {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: yellow;
+        animation: sunmove 4s ease-in-out forwards;
+      }
+      @keyframes sunmove {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translate(100px, 200px);
+        }
+      }
+      .cloud {
+        height: 200px;
+        width: 300px;
+        /* background-color: grey; */
+        /* border: 2px solid grey; */
+        position: relative;
+        left: 100px;
+        top: 100px;
+        display: flex;
+      }
+      .cloud-div1 {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        position: absolute;
+        top: -40px;
+        left: 10px;
+      }
+      .cloud-div2 {
+        height: 100px;
+        width: 200px;
+        background-color: grey;
+        position: absolute;
+        left: 80px;
+        top: -80px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+      }
+      .cloud-div3 {
+        height: 100px;
+        width: 100px;
+        background-color: grey;
+        position: absolute;
+        left: 230px;
+        top: -40px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        rotate: 45deg;
+      }
+      .cloud-div4 {
+        height: 100px;
+        width: 350px;
+        background-color: grey;
+        position: absolute;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 80px;
+      }
+      .light-div {
+        height: 200px;
+        width: 400px;
+        position: relative;
+        left: 60px;
+        top: -50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .light {
+        height: 100px;
+        width: 10px;
+        visibility: hidden;
+        background-color: rgb(0, 175, 245);
+        border-radius: 10px;
+        rotate: 45deg;
+        animation: lightEffect 4s ease-in-out 2s forwards;
+      }
+      @keyframes lightEffect {
+        from {
+          visibility: hidden;
+        }
+        to {
+         visibility: visible;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="sun"></div>
+      <div class="cloud">
+        <div class="cloud-div1"></div>
+        <div class="cloud-div2"></div>
+        <div class="cloud-div3"></div>
+        <div class="cloud-div4"></div>
+      </div>
+      <div class="light-div">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+      </div>
+    </div>
+  </body>
+</html>

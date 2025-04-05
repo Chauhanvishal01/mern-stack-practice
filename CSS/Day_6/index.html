@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        height: 400px;
+        width: 500px;
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        /* align-content: space-around; */
+        align-items: center;
+      }
+      .child {
+        height: 100px;
+        width: 150px;
+        background-color: lightcoral;
+        border: 4px solid;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: #333">
+    <div class="parent">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+      <div class="child">Child 4</div>
+      <div class="child">Child 5</div>
+      <div class="child">Child 6</div>
+      <div class="child">Child 7</div>
+      <div class="child">Child 8</div>
+    </div>
+  </body>
+</html>

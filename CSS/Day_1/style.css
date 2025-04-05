@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#heading-one,
+#heading-two {
+    background-color: greenyellow;
+    padding: 0;
+}
+
+#para-one {
+    background-color: #90ee90;
+    color: #333;
+
+
+}
+#para2{
+    background-color: #ffa07abe;
+}
+#para3{
+    background-color: #20b2abbe;
+}

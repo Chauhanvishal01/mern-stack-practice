@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #333;
+}
+
+i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.first-navbar {
+    height: 60px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+.second-navbar {
+    height: 40px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.btn button {
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: aqua;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.third-navbar {
+    height: 60px;
+    padding: 0.5rem;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.nav-items a {
+    font-size: 1.8rem;
+}
+
+#search-img {
+    height: 20px;
+    width: 20px;
+    padding-top: 0.5rem;
+}
+
+.btn .signin-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.btn .login-btn {
+    background-color: #0000ff;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.fourth-navbar {
+    background-color: #00bbff;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.search input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.8rem;
+    padding-left: 1rem;
+}
+
+.fifth-navbar {
+    background-color: #ff7f509a;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.fifth-navbar .top-menu {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background-color: coral;
+    padding-block: 1rem;
+}
+
+.fifth-navbar .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 0.8rem;
+}
+
+.fifth-navbar .logo h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.fifth-navbar .icons i {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.sixth-nav {
+    background-color: #ff0000d2;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sixth-nav .logo h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.sixth-nav .nav-items {
+    font-family: sans-serif;
+}
+
+.sixth-nav .nav-items a {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.sixth-nav .nav-items a:first-child {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fff;
+}
+
+.sixth-nav .nav-items a:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fff;
+}
+
+.sixth-nav input,
+.seventh-nav input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.seventh-nav {
+    height: 80px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.seventh-nav .nav-items {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.seventh-nav .nav-items h1 {
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-inline: 2rem;
+    font-size: 3rem;
+    border: 2px solid #fff;
+    text-align: center;
+
+}
+
+.seventh-nav .nav-items a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.seventh-nav .nav-items .special {
+    background-color: blue;
+    padding: 2.5rem 1rem;
+}
+
+select {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+select option {
+    color: #333;
+}
+
+.seventh-nav .search {
+    margin-right: 4rem;
+}
+
+.seventh-nav input {
+    margin-right: 4rem;
+}

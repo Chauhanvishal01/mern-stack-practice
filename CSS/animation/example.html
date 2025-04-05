@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .ball {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: #F88158;
+        overflow: hidden;
+        animation: bounce 1s ease-in-out alternate infinite;
+      }
+      @keyframes bounce {
+        from {
+          transform: translateY(40px);
+          border-bottom-right-radius: 40%;
+          border-bottom-left-radius: 40%;
+        }
+        to {
+          transform: translateY(-300px);
+        }
+      }
+      .surface {
+        width: 400px;
+        height: 40px;
+        border: 10px solid green;
+        background-color: green;
+        /* z-index: ; */
+      }
+      .line {
+        height: 10px;
+        width: 400px;
+        background-color: #333;
+        position: absolute;
+        top: 50%;
+      }
+      .line2 {
+        transform: rotate(45deg);
+      }
+      .line3 {
+        transform: rotate(90deg);
+        border-radius: 10px;
+      }
+      .line4 {
+        transform: rotate(145deg);
+      }
+      .line5 {
+        transform: rotate(200deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball">
+      <div class="line"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+      <div class="line line4"></div>
+      <div class="line line5"></div>
+    </div>
+    <div class="surface"></div>
+  </body>
+</html>

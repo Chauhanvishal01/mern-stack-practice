@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        line-height: 1.5;
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+      h1 {
+        color: gray;
+        text-align: center;
+        text-decoration: overline;
+        text-transform: uppercase;
+        /* offset-x | offset-y | blur-radius | color */
+        text-shadow: 4px 4px 4px #adff2f;
+      }
+      .para {
+        /* font-weight: 800; */
+        /* font-weight: bold; */
+        font-weight: bolder;
+        text-align: end;
+        text-decoration: underline;
+        text-transform: lowercase;
+        word-spacing: 20px;
+        text-shadow: 10px -15px 4px;
+      }
+      .second-para {
+        /* border: 2px solid red; */
+        /* text-decoration: line-through; */
+        text-transform: capitalize;
+        letter-spacing: 15px;
+        text-shadow: 15px 20px 5px;
+        /*  text-decoration-color: #daa520;
+        text-decoration-line: line-through;
+        text-decoration-style: wavy; */
+        text-decoration: overline wavy #5691f1;
+        text-decoration-thickness: 5px;
+        text-indent: 20px;
+      }
+      .third {
+        direction: rtl;
+        text-decoration: green wavy underline;
+      }
+      .main-para {
+        font-style: italic;
+        text-align: justify;
+        border: 10px dashed;
+        background-color: #add8e6;
+        padding: 10px;
+        text-decoration: #663399 wavy underline;
+        /* word-spacing: -10px; */
+        /* letter-spacing: -4px; */
+      }
+
+      .underover {
+        text-decoration: #003cff dashed underline overline;
+      }
+
+      .thick {
+        text-decoration: solid underline #007780 4px;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+        margin-right: 20px;
+      }
+      a:hover {
+        color: lightcoral;
+      }
+      #box {
+        width: 400px;
+        border: 2px solid;
+        /* word-wrap: break-word; */
+        /* word-break: break-all; */
+        white-space: nowrap;
+        overflow: hidden;
+        /* text-overflow: "[...etc]"; work in firefox only   */
+        text-overflow: ellipsis; /* Three dots */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <h1>Vishal Chauhan</h1>
+    <p class="para">This is Paragraph.</p>
+    <p class="second-para">This is Second paragraph</p>
+
+    <p class="third">This is third paragraph</p>
+
+    <p class="main-para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+      voluptate deleniti inventore repellat in quasi assumenda, dolores dolorem
+      quis facere ad fuga quas tempore excepturi beatae voluptatem praesentium
+      hic possimus, mollitia nihil ex cupiditate explicabo earum? Eos aperiam
+      laudantium magni!
+    </p>
+
+    <p class="underover">This text has lines above <em>and</em> below it.</p>
+    <p class="thick">
+      This text has a really thick purple underline in supporting browsers.
+    </p>
+
+    <input type="text" />
+    <div id="box">
+      Lorem ipsum dolor sit
+      veeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrryyyyyyyyyyyyyyyyyyyyyyyyyyyloooooonnnnnnnnnnnngggggggwwwwwwwwwwoooooooooooorrrrrrrrrrrddddddddddddd
+      amet, consectetur adipisicing elit. Esse tempore, molestias dolorum quis
+      consectetur dignissimos officiis sed adipisci, quibusdam omnis
+      necessitatibus. Voluptatem adipisci enim obcaecati vero tempora nam.
+      Dolor, nisi. Ab in voluptate ea veniam? Perspiciatis illo sapiente
+      inventore nobis cum. Qui ducimus quod quidem, neque error iste vero quia.
+    </div>
+  </body>
+</html>

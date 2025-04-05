@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    div {
+      height: 400px;
+      width: 400px;
+      font-size: 40px;
+      padding: 10px 20px;
+      border: 1px solid #000;
+      text-align: center;
+
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      transition: all 2s ease-in-out 0s;
+    }
+    .box:hover {
+      background-color: green;
+      /* transform: scale(0.5); */
+      /* border-radius: 50%; */
+
+      transform: rotate(360deg) scale(1.5);
+      /* transform: translateY(100px); */
+      /* transform: translate(100px, -100px); */
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    .box1 {
+      position: relative;
+      overflow: hidden;
+    }
+    .box1:hover {
+      background-color: skyblue;
+      /* transform: translate(100px, 200px); */
+    }
+    .inner {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      top: 90%;
+      left: 30%;
+      border-radius: 50%;
+      background-color: black;
+    }
+    .inner:hover {
+      transform: translateY(-300px);
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <div class="box">Hover Me</div>
+    <div class="box1">
+      Hover Me
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="style.css" rel="stylesheet"/>
+    <style>
+      body {
+        /* background:linear-gradient(90deg,#000000,#008000) ; */
+        background-color: #333;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: 10px;
+      }
+      .headings {
+        background-color: gray;
+        padding: 20px;
+        color: #333;
+      }
+    
+      h2 {
+        padding: 20px;
+      }
+      p {
+        margin-block: 20px;
+        padding: 20px;
+      }
+      h1{
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <h1 style="color: red; background-color: lightgreen">
+      Vishal Chauhan Inline CSS
+    </h1>
+
+    <!-- Internal CSS -->
+    <h2 class="headings" id="heading-one">Hello Vishal External CSS</h2>
+
+    <!-- External CSS -->
+    <h3
+      id="heading-two"
+      class="headings"
+      style="padding: 20px;"
+    >
+      External CSS
+    </h3>
+
+    <p id="para-one">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis
+      voluptas eligendi laudantium officiis earum cum libero accusantium fugiat
+      doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Deserunt vel omnis, nihil consectetur iure totam quidem exercitationem,
+      unde pariatur eius doloremque soluta beatae doloribus animi? Inventore,
+      ducimus distinctio, impedit qui illo labore aspernatur, odit porro esse
+      excepturi debitis a hic saepe sed molestiae quae maiores non consectetur
+      maxime eveniet deserunt?
+    </p>
+    <p id="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis
+      voluptas eligendi laudantium officiis earum cum libero accusantium fugiat
+      doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Deserunt vel omnis, nihil consectetur iure totam quidem exercitationem,
+      unde pariatur eius doloremque soluta beatae doloribus animi? Inventore,
+      ducimus distinctio, impedit qui illo labore aspernatur, odit porro esse
+      excepturi debitis a hic saepe sed molestiae quae maiores non consectetur
+      maxime eveniet deserunt?
+    </p>
+    <p id="para3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis
+      voluptas eligendi laudantium officiis earum cum libero accusantium fugiat
+      doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Deserunt vel omnis, nihil consectetur iure totam quidem exercitationem,
+      unde pariatur eius doloremque soluta beatae doloribus animi? Inventore,
+      ducimus distinctio, impedit qui illo labore aspernatur, odit porro esse
+      excepturi debitis a hic saepe sed molestiae quae maiores non consectetur
+      maxime eveniet deserunt?
+    </p>
+  </body>
+</html>

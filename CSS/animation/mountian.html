@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountain</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+      }
+      .parent {
+        height: 800px;
+        width: 800px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        animation: dark 7s ease-in-out alternate infinite;
+      }
+      @keyframes dark {
+        from {
+          background-color: #000;
+        }
+        to {
+          background-color: #fff;
+        }
+      }
+      .sun {
+        height: 200px;
+        width: 200px;
+        background-color: orange;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        animation: sunmove 6s ease-in-out 2s alternate infinite;
+      }
+      @keyframes sunmove {
+        from {
+          transform: translateY(0);
+          background-color: orange;
+        }
+        to {
+          transform: translateY(-500px);
+          background-color: yellow;
+        }
+      }
+      .mountain {
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        bottom: -90px;
+        left: -10px;
+        display: flex;
+      }
+      .mount {
+        height: 500px;
+        width: 500px;
+        background-color: lightgreen;
+      }
+      .first-mountain,
+      .second-mountain,
+      .third-mountain {
+        rotate: 45deg;
+      }
+      .cloud-div {
+        height: 400px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        animation: cloudmove 8s ease-in-out alternate infinite;
+      }
+      @keyframes cloudmove {
+        from {
+          transform: translateX(-400px);
+        }
+        to {
+          transform: translateX(700px);
+        }
+      }
+      .cloud {
+        height: 100px;
+        width: 300px;
+        border-radius: 100px;
+        background-color: grey;
+      }
+      .cloud-2 {
+        height: 100px;
+        width: 200px;
+        background-color: grey;
+        position: absolute;
+        top: 100px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="cloud-div">
+        <div class="cloud"></div>
+        <div class="cloud-2"></div>
+        <div class="cloud-3"></div>
+      </div>
+      <div class="sun"></div>
+      <div class="mountain">
+        <div class="first-mountain mount"></div>
+        <div class="second-mountain mount"></div>
+        <div class="third-mountain mount"></div>
+      </div>
+    </div>
+  </body>
+</html>

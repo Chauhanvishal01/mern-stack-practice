@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*   li:first-child {
+        color: red;
+      }
+      p:last-child {
+        background-color: skyblue;
+      } */
+      /* li:nth-child(2n+1){
+        background-color: skyblue;
+       } */
+      /*     p:nth-of-type(2n) {
+        background-color: skyblue;
+      } */
+      a {
+        font-size: 2rem;
+        padding: 1rem;
+        color: cyan;
+      }
+      a:active {
+        background-color: green;
+      }
+      a:hover {
+        background-color: crimson;
+      }
+      p:target {
+        background-color: gold;
+      }
+      p::before {
+        content: "Vishal";
+        background-color: skyblue;
+        color: red;
+        padding: 1rem;
+        display: block;
+      }
+      p::after {
+        content: "Chauhan";
+        background-color: green;
+        color: white;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vishal Chauhan</h1>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#js">JS</a>
+
+    <div>
+      <p id="html">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+        voluptates sed odio necessitatibus sunt quos ratione laboriosam
+        eligendi, minus libero?
+      </p>
+      <p id="css">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+        voluptates sed odio necessitatibus sunt quos ratione laboriosam
+        eligendi, minus libero?
+      </p>
+      <p id="js">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+        voluptates sed odio necessitatibus sunt quos ratione laboriosam
+        eligendi, minus libero?
+      </p>
+    </div>
+
+    <ul id="list">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor beatae
+      voluptatibus fugit eveniet, modi earum minima rem quaerat ut impedit?
+    </p>
+    <p class="test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor beatae
+      voluptatibus fugit eveniet, modi earum minima rem quaerat ut impedit?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor beatae
+      voluptatibus fugit eveniet, modi earum minima rem quaerat ut impedit?
+    </p>
+    <ul id="list-two">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, sed
+        quae! Voluptate provident dolor, corporis commodi consequatur totam sit
+        minus.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, sed
+        quae! Voluptate provident dolor, corporis commodi consequatur totam sit
+        minus.
+      </p>
+    </div>
+  </body>
+</html>

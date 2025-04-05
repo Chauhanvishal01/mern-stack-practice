@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+        /* font-size: 62.5%; */
+      }
+      .parent {
+        width: 800px;
+
+        /* height: 100vh; */
+        border: 20px solid red;
+        background-color: lightgreen;
+        font-size: 2rem;
+        padding: 1em;
+      }
+      .box {
+        /*   height: 800px;
+        width: 500px;
+        width: 50%; */
+        width: 80vmin;
+        /* height: 70vmax; */
+        background-color: lightcoral;
+        font-size: 2em;
+        padding: 1em;
+      }
+      .card {
+        height: 200px;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+        font-size: 3rem;
+        background: coral;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+      }
+      .toggle {
+        display: none;
+      }
+      button {
+        margin-top: 2rem;
+        padding: 2rem 3rem;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        reprehenderit aliquid tempora quis, blanditiis ad. Distinctio ex
+        voluptate ullam deserunt temporibus et optio veniam. Tenetur iste
+        eveniet nulla, eos deserunt, sunt maiores animi quae obcaecati
+        repellendus, amet ea temporibus aliquid minus est similique itaque esse
+        tempora reprehenderit mollitia ad doloremque!
+      </div>
+    </div>
+    <button id="btn">Click Me</button>
+    <div class="card toggle">
+      <h1>Thank You So Much😊</h1>
+    </div>
+    <script>
+      const btn = document.getElementById("btn");
+      const card = document.querySelector(".card");
+      btn.addEventListener("click", () => {
+        card.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
+
+/* if (card.style.display === "none") { card.style.display = "block"; } else {
+card.style.display = "none"; } */

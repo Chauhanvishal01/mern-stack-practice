@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+      }
+      .parent {
+        height: 400px;
+        width: 400px;
+        border: 2px solid transparent;
+        text-align: center;
+        padding-bottom: 50px;
+        background-color: lightcoral;
+        border-radius: 14px;
+      }
+      .inner {
+        height: 300px;
+        width: 300px;
+        border: 2px solid transparent;
+        background-color: lightseagreen;
+        margin-left: 45px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+      }
+      .inner-child {
+        height: 200px;
+        width: 200px;
+        border: 2px solid transparent;
+        background-color: red;
+        margin-left: 45px;
+        border-radius: 10px;
+      }
+      span {
+        font-size: 24px;
+        font-weight: 700;
+    
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1>Hello1</h1>
+      <div class="inner">
+        <h1>Hello2</h1>
+        <div class="inner-child"><span>Vishal</span></div>
+        <span>hello4</span>
+      </div>
+      <span>Hello5</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        font-family: sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+      }
+      main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .common {
+        width: 400px;
+        margin-right: 3rem;
+        padding-block: 4rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .common h1,
+      .common p {
+        text-align: center;
+      }
+      .common p i {
+        font-size: 4rem;
+        color: crimson;
+      }
+      .common h1 {
+        font-size: 3rem;
+      }
+      .common p {
+        font-size: 2rem;
+        color: #333;
+      }
+      fieldset,
+      input {
+        border: none;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      legend {
+        margin-bottom: 0.5rem;
+        color: #414141;
+      }
+      input {
+        background-color: #eee;
+        padding: 1rem;
+      }
+      .common a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        color: #333;
+      }
+      .common a:hover {
+        color: blue;
+      }
+      button {
+        padding: 1rem 4rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        border-radius: 0.7rem;
+        border: 2px solid transparent;
+        background-color: crimson;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover {
+        background-color: transparent;
+        border: 2px solid crimson;
+        color: #000;
+      }
+      .social {
+        text-align: center;
+      }
+      .social i {
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <secion class="login common">
+        <p><i class="fa-solid fa-right-to-bracket"></i></p>
+        <h1>welcome!</h1>
+        <p>Sign in to your account</p>
+        <fieldset>
+          <legend>Email</legend>
+          <input type="text" />
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <input type="text" />
+        </fieldset>
+        <div>
+          <a href="#">remember me?</a>
+          <a href="#">forgot password?</a>
+        </div>
+        <button>Login <i class="fa-solid fa-arrow-right"></i></button>
+      </secion>
+      <section class="register common">
+        <p>
+          <i class="fa-solid fa-circle-user"></i>
+        </p>
+        <h1>Create account!</h1>
+        <fieldset>
+          <legend>Name</legend>
+          <input type="text" />
+        </fieldset>
+        <fieldset>
+          <legend>Email</legend>
+          <input type="email" />
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <input type="text" />
+        </fieldset>
+        <button>Create <i class="fa-solid fa-arrow-right"></i></button>
+
+        <div class="social">
+          <p>Or create account using social media</p>
+          <i class="fa-brands fa-facebook" style="color: #008cff"></i>
+          <i class="fa-brands fa-pinterest" style="color: crimson"></i>
+          <i class="fa-brands fa-twitter" style="color: skyblue"></i>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

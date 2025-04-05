@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cup</title>
+    <style>
+      body {
+        background-color: #333;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 800px;
+        width: 700px;
+        background-color: skyblue;
+        position: relative;
+        border-radius: 10px;
+      }
+      .plate {
+        height: 40px;
+        width: 400px;
+        background-color: #fff;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+      }
+      .cup {
+        height: 300px;
+        width: 400px;
+        background-color: #fff;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        position: absolute;
+        bottom: 120px;
+        left: 100px;
+      }
+      .handle {
+        height: 100px;
+        width: 100px;
+        border: 20px solid #fff;
+        border-radius: 50px;
+        position: absolute;
+        top: 48%;
+        right: 120px;
+      }
+      .steam {
+        height: 50px;
+        width: 50px;
+        background-color: #ffffff38;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        animation: move 5s ease-in-out infinite 1s;
+      }
+      .steam-2 {
+        animation: movetwo 4s ease-in-out infinite 1s;
+      }
+      .steam-3 {
+        animation: movethree 6s ease-in-out infinite 1s;
+      }
+      .steam-0 {
+        animation: movefour 3s ease-in-out infinite 1s;
+      }
+
+      @keyframes movefour {
+        from {
+          top: 50%;
+          left: 20%;
+        }
+        to {
+          top: 30%;
+          left: 20%;
+        }
+      }
+      @keyframes move {
+        from {
+          top: 50%;
+          left: 30%;
+        }
+        to {
+          top: 30%;
+          left: 30%;
+        }
+      }
+      @keyframes movetwo {
+        from {
+          top: 50%;
+          left: 40%;
+        }
+        to {
+          top: 30%;
+          left: 40%;
+        }
+      }
+      @keyframes movethree {
+        from {
+          top: 50%;
+          left: 50%;
+        }
+        to {
+          top: 30%;
+          left: 50%;
+        }
+      }
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: brown;
+      }
+      span {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>A Cup of <span>TEA</span></h1>
+      <div class="steam-0 steam"></div>
+      <div class="steam-1 steam"></div>
+      <div class="steam-2 steam"></div>
+      <div class="steam-3 steam"></div>
+      <div class="cup"></div>
+      <div class="handle"></div>
+      <div class="plate"></div>
+    </div>
+  </body>
+</html>

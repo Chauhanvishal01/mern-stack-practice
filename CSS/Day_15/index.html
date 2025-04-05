@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+      p {
+        font-size: 3rem;
+        padding: 1rem;
+      }
+      .parent {
+        height: 80vh;
+        width: 96vw;
+        padding: 1rem;
+        border: 2px solid #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fill);
+        grid-template-rows: repeat(auto-fill, minmax(300px,3));
+        gap: 1rem;
+      }
+      .child {
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #child-1 {
+        grid-area: 1/1/2/4;
+      }
+      #child-3 {
+        grid-area: 1/5/3/6;
+        justify-content: space-around;
+      }
+      #child-4 {
+        grid-area: 1/6/3/7;
+      }
+      #child-6 {
+        grid-area: 2/1/4/5;
+
+        font-size: 10rem;
+      }
+      #child-5 h1 {
+        font-size: 3rem;
+      }
+      #child-7 h1 {
+        font-size: 10rem;
+      }
+      #child-8 {
+        font-size: 5rem;
+      }
+      #child-9 {
+        grid-area: 3/6/4/8;
+      }
+      .special {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .special p {
+        font-size: 2rem;
+        width: 40%;
+      }
+      .circle {
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      @media screen and (max-width: 1500px) {
+        p {
+          font-size: 2rem;
+        }
+        .special p {
+          font-size: 1.3rem;
+        }
+        .circle {
+          height: 50px;
+          width: 50px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+        #child-5 h1 {
+          font-size: 2rem;
+        }
+        #child-6 h1 {
+          font-size: 8rem;
+        }
+        #child-7 h1,
+        #child-8 h1 {
+          font-size: 4rem;
+        }
+        #child-9 p{
+            font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" id="child-1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum
+          quod eligendi similique vitae fugiat. Adipisci eaque aliquid culpa
+          illo perspiciatis esse aliquam consequatur enim, mollitia neque nobis
+          assumenda accusantium at optio necessitatibus corrupti. Ducimus
+          numquam suscipit voluptatibus modi eveniet consectetur distinctio ut
+          ipsam tempore fugiat, veniam iusto atque alias.
+        </p>
+      </div>
+      <div class="child" id="child-2"></div>
+      <div class="child" id="child-3">
+        <div class="special">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="circle"></div>
+        </div>
+        <div class="special">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="circle"></div>
+        </div>
+        <div class="special">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="circle"></div>
+        </div>
+        <div class="special">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="child" id="child-4"></div>
+      <div class="child" id="child-5">
+        <p>Module Title</p>
+        <h1>Rounded Corners</h1>
+      </div>
+      <div class="child" id="child-6">
+        <h1>Vishal</h1>
+      </div>
+      <div class="child" id="child-7">
+        <p>Module Title</p>
+        <h1>16:9</h1>
+      </div>
+      <div class="child" id="child-8">
+        <h1>123</h1>
+      </div>
+      <div class="child" id="child-9">
+        <h1>AaBbCc</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quod
+          corrupti odit perferendis itaque qui! Nemo voluptatibus eligendi
+          itaque blanditiis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

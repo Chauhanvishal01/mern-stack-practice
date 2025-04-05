@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      body {
+        background-color: #333;
+        color: #fff;
+        height: 100vh;
+        font-family: sans-serif;
+      }
+      .box {
+        height: 200px;
+        width: 300px;
+        border: 20px solid;
+        background-color: lightblue;
+        padding: 10px;
+        margin: 200px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: 2px wavy underline blueviolet;
+        /* box-sizing: border-box; */
+        text-shadow: 10px 10px 5px green;
+        text-align: center;
+        transition: all 2s;
+      }
+      .box:hover {
+        rotate: 360deg;
+        height: 600px;
+        width: 600px;
+      }
+
+      h1 {
+        color: coral;
+        letter-spacing: 5px;
+        text-indent: 50px;
+      }
+
+      p {
+        margin-top: 500px;
+        text-align: right;
+        text-align-last: left;
+        font-weight: 900;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        margin: 100px;
+        padding: 10px;
+        border: 10px solid;
+        border-top-color: green;
+        border-radius: 50%;
+        background-color: lightgreen;
+        /* transition: all 2s ease-in; */
+        animation: spin 0.8s linear infinite;
+        /* cursor: pointer; */
+      }
+   /*    .box2:hover {
+        transform: translateX(400px);
+        rotate: 360deg;
+      } */
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      fieldset {
+        border: 10px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Hover Me</h1>
+    </div>
+    <div class="box2">
+      <h1></h1>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+        voluptates dolore molestiae eligendi consequuntur reprehenderit,
+        assumenda ea, perferendis iusto sapiente illo nobis impedit eos eum
+        reiciendis. Nulla atque delectus, quo porro perspiciatis culpa deleniti
+        consequatur accusamus error voluptatibus molestias explicabo adipisci
+        eos unde sunt reprehenderit. Temporibus ratione exercitationem tempore
+        iure?
+      </p>
+    </div>
+    <fieldset>
+      <legend>Vishal</legend>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, hic.</p>
+    </fieldset>
+  </body>
+</html>

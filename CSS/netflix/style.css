@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    /* line-height: 1.5; */
+}
+
+body {
+    position: relative;
+    background-color: #000;
+}
+
+
+main {
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+nav h1 {
+    font-size: 6rem;
+    font-weight: bolder;
+    color: red;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav select {
+    height: 40px;
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.408);
+    cursor: pointer;
+}
+
+select option {
+    color: #000;
+
+}
+
+nav button {
+    height: 40px;
+    margin-left: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 0.683);
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 6rem;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+}
+
+.content p {
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 2rem;
+    letter-spacing: 1px;
+}
+
+.content .special {
+    color: #eee;
+    font-weight: bold;
+
+}
+
+.email {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email input {
+    width: 68%;
+    padding: 1.5rem 1rem;
+    background: rgba(0, 0, 0, 0.574);
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    outline: none;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.email input::placeholder {
+    color: #ffffffcb;
+    letter-spacing: 1px;
+}
+
+.email button {
+    width: 30%;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.email button:hover {
+    background-color: rgba(255, 0, 0, 0.683);
+}
+
+.email button span {
+    margin-left: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.border {
+    border: 7px solid red;
+    width: 100vw;
+    height: 300px;
+    border-radius: 40%;
+    border-right: none;
+    /* border-top: none; */
+    border-bottom: none;
+    border-left: none;
+
+    box-shadow: inset 0px 6px 6px rgba(3, 83, 220, 0.75);
+    background-color: #000;
+    position: absolute;
+    top: 85vh;
+    z-index: 100;
+
+
+
+}
+
+.cards {
+    width: 100vw;
+    background-color: #000;
+    overflow: hidden;
+    padding: 10rem;
+    padding-left: 30rem;
+    position: relative;
+
+}
+
+#main-head-card {
+    margin-top: 7rem;
+}
+
+.inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.card img {
+    height: 300px;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+
+}
+
+.card img:hover {
+    transform: scale(1.2);
+
+}
+
+.cards h1 {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.card {
+    padding: 1rem;
+    position: relative;
+}
+
+.card h1 {
+    font-size: 10rem;
+    color: #000;
+    text-shadow: 1px 1px 10px white;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+}
+
+.card-content-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#headingone {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-box {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(90deg, blue, blueviolet);
+    padding: 2.2em;
+    border-radius: 1rem;
+    position: relative;
+
+
+}
+
+
+
+
+.card-box h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-box p {
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.card-box div {
+
+    position: absolute;
+    right: 2rem;
+    bottom: 10px;
+
+}
+
+.card-box img {
+    height: 100px;
+    width: 100px;
+    margin-top: 2rem;
+
+}
+
+.question {
+    margin-top: 5rem;
+}
+
+.datas {
+    width: 80%;
+}
+
+.datas h1 {
+    margin-top: 2rem;
+}
+
+.que-box {
+    border: 1px solid #000;
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -3rem;
+}
+
+.que-box:hover {
+    background: #333333c8;
+}
+
+.que-box .icon {
+    font-size: 5rem;
+}
+
+.answer {
+    font-size: 3rem;
+    margin-top: 1rem;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: none;
+}
+
+.bottom-email {
+    width: 50vw;
+    height: 200px;
+    margin: 0 auto;
+    color: #fff;
+
+}
+
+.bottom-email p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer {
+    width: 60vw;
+    height: 50vh;
+    margin: 0 auto;
+    color: #fff;
+}
+
+footer p {
+    font-size: 2rem;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 3rem;
+
+}
+
+.footer-main div {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.footer-main div a {
+    font-size: 2rem;
+    color: #aaa;
+}
+
+footer select {
+    margin-block: 4rem;
+
+    font-size: 1.5rem;
+    background: #333;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-name {
+    color: #aaa;
+}
+
+
+@media screen and (max-width:1041px) {
+
+    .border {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 4rem;
+    }
+
+    .email button {
+        font-size: 1.5rem;
+    }
+
+    .email button span {
+        font-size: 2rem;
+    }
+
+    #headingone {
+        font-size: 3rem;
+    }
+    .datas h1{
+        font-size: 3rem;
+    }
+    .que-box{
+        font-size: 2rem;
+    }
+    .que-box .icon{
+        font-size: 3rem;
+    }
+    .answer{
+        font-size: 2rem;
+    }
+}
