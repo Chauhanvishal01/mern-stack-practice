@@ -30,6 +30,7 @@ main {
             var(--gradient-right-color) 20%,
             var(--gradient-left-color) 59.9%,
             #fff 60%);
+    position: relative;
 }
 
 .navbar {
@@ -72,7 +73,7 @@ main {
 .hero-section-content {
     height: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -105,5 +106,179 @@ main {
     cursor: pointer;
 
 }
+
+/* Hero Box */
+
+
+.hero-box {
+    height: 300px;
+    width: 450px;
+    background: #fff;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10rem;
+    transform: rotate(-10deg);
+    box-shadow:inset 0 4px 7px 1px #d2cfcf;
+}
+
+
+.hero-box .left-box {
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    /* padding: 1rem; */
+}
+
+.left-box .left-box-top {
+    background: #ddd;
+    height: 24%;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1rem;
+
+
+}
+
+.left-box-top div {
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem;
+}
+
+.left-box-top .box-1 {
+    background: #00ffff8d;
+}
+
+.left-box-top .box-2 {
+    background: #6ac96a;
+}
+
+.left-box-top .box-3 {
+    background: #e9d253;
+}
+
+.left-box-top .box-4 {
+    background: rgb(249, 58, 96);
+}
+
+
+
+
+.left-box-bottom {
+    border: 2px solid #ddd;
+    border-bottom-left-radius: 1rem;
+}
+
+.left-box-bottom .progress-box {
+    height: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-box span {
+    height: 5px;
+    width: 10px;
+    background-color: red;
+    border-radius: 1rem;
+}
+
+.progress-box .progress-bar {
+    width: 120px;
+    height: 5px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-box .progress {
+    height: 100%;
+    background: rgb(199, 197, 197);
+    width: 0;
+    transition: width 0.3s;
+}
+
+
+
+
+
+
+
+
+.hero-box .right-box {
+    width: 30%;
+    border: 3px solid #ddd;
+    border-left: 0px;
+    padding: 1rem;
+    padding-block: 0.6rem;
+    overflow: hidden;
+}
+
+.right-box .right-box-box {
+    height: 20px;
+    width: 100px;
+    background: #ddd;
+    margin-bottom: 1rem;
+}
+
+.right-box .right-one {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.right-box .right-two {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.right-box .right-box-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: skyblue;
+    margin-block: 1rem;
+    margin-left: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-box .right-inner-circle {
+    height: 30px;
+    width: 30px;
+
+    background: greenyellow;
+}
+
+.right-box-one {
+    margin-top: 2rem;
+}
+
+.right-box-one .progress-box,
+.right-box-two .progress-box {
+    margin-bottom: 1rem;
+
+}
+
+.right-box-two {
+    /* margin-top: 3rem; */
+}
+
+
+/* Hero Box */
+
+
 
 /* Hero Section Ends */
