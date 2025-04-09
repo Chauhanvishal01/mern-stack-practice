@@ -121,7 +121,7 @@ main {
     align-items: center;
     margin-top: 10rem;
     transform: rotate(-10deg);
-    box-shadow:inset 0 4px 7px 1px #d2cfcf;
+    box-shadow: inset 0 4px 7px 1px #d2cfcf;
 }
 
 
@@ -272,13 +272,169 @@ main {
 
 }
 
-.right-box-two {
-    /* margin-top: 3rem; */
+/* Hero Section Ends */
+/* Explore Section Start */
+
+.explore-section {
+    height: 40vh;
+    /* border: 2px solid red; */
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-top: -13rem;
+    margin-bottom: 4cap;
+    z-index: 99;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-section-left {
+    width: 40%;
+    text-align: end;
+}
+
+.explore-section-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.explore-section-logo h1 {
+    margin-right: 1rem;
+    font-size: 2.3rem;
+    color: #009797;
+    font-weight: 600;
+}
+
+.explore-section-left p {
+    font-size: 1.6rem;
+    color: #383d44;
+    margin-block: 2rem;
+}
+
+.explore-section-left a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #009797;
+}
+
+.hexagon {
+    height: 50px;
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+    background: #3B8686;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon .circle {
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagon .circle i {
+    font-size: 1.8em;
+    color: #3B8686;
 }
 
 
-/* Hero Box */
+
+
+.explore-section-right {
+    width: 60%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
 
 
 
-/* Hero Section Ends */
+.explore-cards .card {
+    height: 380px;
+    width: 300px;
+    border: 2px solid grey;
+
+}
+
+.explore-cards .card .card-top {
+    height: 70%;
+    background: #2bcef0;
+    position: relative;
+}
+
+.card .card-top .card-lines-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+
+}
+
+.line {
+    height: 15px;
+    width: 100px;
+    background: #bfe7fb;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-box {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-box-left {
+    height: 40px;
+    width: 50px;
+    background: #ccf0fb;
+    border-radius: 1rem;
+}
+
+.card-box-right {
+    height: 40px;
+    width: 150px;
+    background: #ccf0fb;
+    border-radius: 1rem;
+}
+
+.card-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+    box-shadow: 0 0 4px 4px #ddd;
+
+
+}
+
+.card-cricle-triangle {
+    height: 30px;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    background: linear-gradient(45deg, #c2bfbf, #c2bfbf);
+}
+
+
+.card-line {
+    height: 10px;
+    width: 150px;
+    background: #c2bfbf;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+
+}
+
+/* Explore Section Ends */
