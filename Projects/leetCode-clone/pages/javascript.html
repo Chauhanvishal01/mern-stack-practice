@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+// Definition for singly-linked list node
+        class ListNode {
+          constructor(val) {
+            this.val = val;
+            this.next = null;
+          }
+        }
+        
+        class Wrapper {
+          // Convert a string like "[1, 2, 3]" into an integer array
+          static stringToIntegerArray(input) {
+            input = input.trim();
+            input = input.substring(1, input.length - 1); // remove brackets
+            if (input.length === 0) return [];
+        
+            return input.split(',').map(x => parseInt(x.trim(), 10));
+          }
+        
+          // Convert the array into a linked list
+          static stringToListNode(input) {
+            const nodeValues = Wrapper.stringToIntegerArray(input);
+            const dummyRoot = new ListNode(0);
+            let ptr = dummyRoot;
+        
+            for (const item of nodeValues) {
+              ptr.next = new ListNode(item);
+              ptr = ptr.next;
+            }
+        
+            return dummyRoot.next;
+          }
+        
+          // Pretty print linked list
+          static prettyPrintLinkedList(node) {
+            let result = '';
+            while (node !== null) {
+              result += node.val;
+              if (node.next !== null) {
+                result += '->';
+              }
+              node = node.next;
+            }
+            console.log(result || 'Empty LinkedList');
+          }
+        }
+        
+        // Example usage:
+        const input = "[1, 2, 3, 4]";
+        const node = Wrapper.stringToListNode(input);
+        Wrapper.prettyPrintLinkedList(node);
+        </pre
+    >
+  </body>
+</html>
