@@ -213,10 +213,6 @@ main {
 
 
 
-
-
-
-
 .hero-box .right-box {
     width: 30%;
     border: 3px solid #ddd;
@@ -273,11 +269,12 @@ main {
 }
 
 /* Hero Section Ends */
+
+
 /* Explore Section Start */
 
 .explore-section {
     height: 40vh;
-    /* border: 2px solid red; */
     max-width: 70vw;
     margin: 0 auto;
     margin-top: -13rem;
@@ -348,7 +345,6 @@ main {
 
 .explore-section-right {
     width: 60%;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     margin-top: -3rem;
@@ -359,8 +355,6 @@ main {
 
 }
 
-
-
 .explore-cards .card {
 
     position: absolute;
@@ -369,7 +363,6 @@ main {
     border-radius: 1rem;
     box-shadow: inset 0 0 5px 4px #80808037;
     overflow: hidden;
-    /* transform: skew(-5deg); */
     z-index: 99;
     background: #fff;
 
@@ -399,9 +392,11 @@ main {
     overflow: hidden;
 
 }
-.card-back-top{
+
+.card-back-top {
     padding-top: 1rem;
 }
+
 .card-top-box-inside-one {
     height: 1rem;
     width: 80px;
@@ -410,6 +405,7 @@ main {
     border-radius: 0.5rem;
     margin-left: 1rem;
 }
+
 .card-top-box-inside-two {
     height: 30px;
     width: 80px;
@@ -418,6 +414,7 @@ main {
     border-radius: 0.5rem;
     margin-left: 1rem;
 }
+
 .card-top-box-inside-three {
     height: 30px;
     width: 40px;
@@ -506,3 +503,152 @@ main {
 }
 
 /* Explore Section Ends */
+/* Feature Section Starts */
+
+.feature-section {
+    height: 80vh;
+    background: linear-gradient(-190deg,
+            #fff 37%,
+            #eff2f39f 20%);
+    margin-top: -25rem;
+    padding-top: 30rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.feature-section-main {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.feature-left-content {
+    width: 600px;
+    padding: 2rem;
+    margin-top: 4.5rem;
+}
+
+.feature-right {
+    margin-top: 0;
+}
+
+.feature-section-right {
+    margin-left: 5rem;
+
+}
+
+.feature-left-content h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #009797;
+    margin-block: 1rem;
+}
+
+.feature-left-content p {
+    font-size: 1.5rem;
+    padding-block: 2rem;
+    color: #8a8a8a;
+}
+
+.feature-left-content a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #009797;
+
+}
+
+#feature-title {
+    color: goldenrod;
+
+}
+
+.feature-left-logos {
+    display: flex;
+    max-width: fit-content;
+    position: relative;
+}
+
+.feature-left-logos .hex-users {
+    background: #36abf5;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.feature-left-logos .hexagon {
+    height: 60px;
+}
+
+.feature-left-logos .hexagon .circle {
+    height: 40px;
+    width: 40px;
+}
+
+.feature-left-logos .hexagon i {
+    font-size: 2rem;
+
+}
+
+.hex-users p {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #36abf5;
+}
+
+.hex-group {
+    background: #aed041;
+    position: absolute;
+    z-index: 2;
+    left: 50px;
+}
+
+.hex-group i {
+    color: #aed041 !important;
+
+}
+
+.hex-trophy {
+    background: #fdd835;
+    position: absolute;
+    left: 100px;
+}
+
+.hex-trophy i {
+    color: #fdd835 !important;
+}
+
+
+.right-logos {
+    position: relative;
+
+}
+
+.hex-suitcase {
+    background: #dec360;
+    z-index: 2;
+}
+
+.hex-suitcase i {
+    color: #dec360 !important;
+}
+
+.hex-building {
+    background: #c7c7c7;
+    position: absolute;
+    left: 50px;
+    z-index: 1;
+}
+
+.hex-building i {
+    color: #c7c7c7 !important;
+}
+
+
+/* Feature Section Ends */
+
+
+/* #dec360 brown
+#c7c7c7 grey
+*/
