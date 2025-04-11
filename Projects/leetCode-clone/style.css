@@ -671,16 +671,20 @@ main {
     justify-content: center;
     align-items: center;
 }
-.developer-top .hexagon{
+
+.developer-top .hexagon {
     height: 100px;
 }
-.developer-top .hexagon .circle{
+
+.developer-top .hexagon .circle {
     height: 70px;
     width: 70px;
 }
-.developer-top .hexagon i{
+
+.developer-top .hexagon i {
     font-size: 4rem;
 }
+
 .developer-top h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -777,3 +781,79 @@ iframe {
 }
 
 /* Developer Section Ends */
+/* Footer Section Starts */
+
+
+.footer {
+    height: 70vh;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .hexagon {
+    height: 100px;
+    margin-top: -5rem;
+    background: crimson;
+}
+
+.footer .hexagon .circle {
+    height: 70px;
+    width: 70px;
+}
+
+.footer .footer-top h1 {
+    font-size: 2rem;
+    margin-block: 2rem;
+    color: crimson;
+}
+
+.footer-top p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #8a8a8a;
+}
+
+.footer-middle-logos {
+    height: 40%;
+}
+
+.footer-bottom p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    color: #8a8a8a;
+
+}
+
+.footer-bottom .footer-link {
+    color: #009797;
+    margin-block: 2rem;
+}
+
+.footer-copyright {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    margin-top: 7rem;
+    color: #8a8a8a;
+
+}
+
+.footer-copyright a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+/* Footer Section Ends */
