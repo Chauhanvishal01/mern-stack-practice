@@ -7,6 +7,12 @@
 html {
     font-size: 62.5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*  height: 100%;
+    width: 100%; */
+}
+
+body {
+    overflow-x: hidden;
 }
 
 main {
@@ -25,6 +31,7 @@ main {
 /* Hero Section Start */
 
 .hero-section {
+    width: 100%;
     height: 73%;
     background: linear-gradient(190deg,
             var(--gradient-right-color) 20%,
@@ -278,7 +285,7 @@ main {
     max-width: 70vw;
     margin: 0 auto;
     margin-top: -13rem;
-    margin-bottom: 4cap;
+    margin-bottom: 4rem;
     z-index: 99;
     position: relative;
     display: flex;
@@ -786,7 +793,7 @@ iframe {
 
 .footer {
     height: 70vh;
-    max-width: 800px;
+    width: 80vw;
     margin: 0 auto;
     text-align: center;
 
@@ -828,7 +835,7 @@ iframe {
 }
 
 .footer-bottom p {
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
     font-size: 1.6rem;
     color: #8a8a8a;
@@ -841,9 +848,8 @@ iframe {
 }
 
 .footer-copyright {
-    width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.7rem;
     margin-top: 7rem;
     color: #8a8a8a;
@@ -857,3 +863,166 @@ iframe {
 }
 
 /* Footer Section Ends */
+
+
+/* Responsive */
+
+
+@media screen and (max-width:1040px) {
+
+    .feature-left-content {
+        width: 400px;
+    }
+
+    .feature-left-content h1 {
+        font-size: 1.8rem;
+        margin-block: 0.5rem;
+    }
+
+    .feature-left-content p {
+        padding-block: 1.5rem;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:980px) {
+
+    .hero-box {
+        display: none;
+    }
+
+    .hero-content {
+        width: 60vw !important;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content button {
+        font-size: 1.4rem;
+    }
+
+    .explore-section-left {
+        width: 30%;
+    }
+
+    .explore-section-logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .explore-section-left p {
+        font-size: 1.4rem;
+    }
+
+    .explore-section-left a {
+        font-size: 1.8rem;
+    }
+
+
+
+    .explore-cards .card {
+        height: 300px;
+        width: 250px;
+    }
+
+    .explore-cards .card-one {
+        height: 200px;
+        width: 250px;
+    }
+
+    .explore-cards .card-two {
+        height: 250px;
+        width: 250px;
+    }
+
+    .developer-section-content .developer-top {
+        width: 500px;
+    }
+
+    .developer-top .hexagon {
+        height: 70px;
+    }
+
+    .developer-top .hexagon .circle {
+        height: 40px;
+        width: 40px;
+    }
+
+    .developer-top .hexagon i {
+        font-size: 2rem;
+    }
+
+    .developer-top h1 {
+        font-size: 2rem;
+        margin-block: 1rem;
+    }
+
+    .developer-top p {
+        font-size: 1.3rem;
+    }
+
+    .developer-bottom {
+        margin-inline: 2rem;
+        justify-content: space-around;
+    }
+
+    .developer-bottom .developer-bottom-left {
+        width: 70%;
+    }
+
+
+    .footer-copyright {
+        text-align: center;
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer-copyright a {
+        font-size: 1.4rem;
+    }
+
+    .footer-copyright a:nth-child(2n) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hero-section {
+        height: 50%;
+    }
+
+    .explore-section {
+        flex-direction: column;
+        height: 60vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .explore-section .explore-section-right {
+        order: 1;
+    }
+
+    .explore-section .explore-section-left {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .explore-section-logo {
+        justify-content: center;
+    }
+
+    .explore-section-logo .hexagon {
+        display: none;
+    }
+}
